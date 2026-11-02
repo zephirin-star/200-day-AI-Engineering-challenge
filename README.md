@@ -43,3 +43,17 @@ I practiced Python functions, loops, list accumulation, and automated testing. I
 ## Day 5 - export clean distances
 I created a python fuction that clean a list of distances, create a csv file and return a clean list of distances.
 I tested if it works with a list of values without changing the original list, and that work with and empty list.
+### Day 6 — CSV Statistics
+
+The function `summarize_distances_csv(filename)`:
+
+- Reads distance measurements from a CSV file.
+- Skips the header and converts distance strings into numbers.
+- Counts the number of distances.
+- Calculates the total distance in miles.
+- Calculates the average distance in miles.
+- Handles empty datasets without division-by-zero errors.
+- Returns the statistics in a dictionary.
+- Preserves the original CSV file.
+
+**What I learned:** I practiced reading CSV files, using Python functions, converting data types, calculating summary statistics, and testing my code.
