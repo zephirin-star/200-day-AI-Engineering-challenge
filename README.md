@@ -67,3 +67,19 @@ Test:
 - Mixed valid and invalid data
 - Empty dataset
 - Original CSV unchanged
+### Day 8 — Data Quality Report
+
+The function `create_quality_report()` analyzes a dataset audit and produces a data quality summary.
+
+It:
+- Counts valid and rejected rows.
+- Calculates the total number of records.
+- Calculates the percentage of valid records.
+- Calculates the average valid distance.
+- Handles empty datasets.
+- Returns the results as a dictionary without modifying the original input.
+
+**Tests performed:**
+- Normal dataset
+- Empty dataset
+- Original input remains unchanged
