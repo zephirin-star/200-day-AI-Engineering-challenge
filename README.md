@@ -57,3 +57,13 @@ The function `summarize_distances_csv(filename)`:
 - Preserves the original CSV file.
 
 **What I learned:** I practiced reading CSV files, using Python functions, converting data types, calculating summary statistics, and testing my code.
+## Day 7: Add CSV data validation and manual accumulators
+Return a dictionary containing:
+- valid_distances
+- rejected_rows
+- total_miles
+
+Test:
+- Mixed valid and invalid data
+- Empty dataset
+- Original CSV unchanged
