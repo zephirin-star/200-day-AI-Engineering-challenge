@@ -84,7 +84,7 @@ It:
 - Empty dataset
 - Original input remains unchanged
   
-## Day_09_function_evaluate_data_quality()
+## Day_09_Data_Quality_Gate
 
 _ The function check wheter a dataset passes a quality threshold
 _ Test five different datasets
