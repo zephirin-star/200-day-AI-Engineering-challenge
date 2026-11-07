@@ -83,3 +83,13 @@ It:
 - Normal dataset
 - Empty dataset
 - Original input remains unchanged
+  
+## Day_09_function_evaluate_data_quality()
+
+_ The function check wheter a dataset passes a quality threshold
+_ Test five different datasets
+1- Test a dataset with a quality_percentage less than the threshold and return "REJECT"
+2- Test a dataset with exactly the threshold and return "PASS"
+3- Test a dataset containing 0 rows and return "EMPTY"
+4- Test a dataset with a custom threshold and return "pASS"
+5- verify the original dictionary remains unchanged
