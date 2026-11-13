@@ -93,3 +93,10 @@ _ Test five different datasets
 3- Test a dataset containing 0 rows and return "EMPTY"
 4- Test a dataset with a custom threshold and return "pASS"
 5- verify the original dictionary remains unchanged
+
+## Day_10_Duplicate_Detection
+
+- The function find_duplication(records) creates two lists seen and duplicates
+- seen stores each unique value encountered while looping through the records.
+- duplicates stores values that appear again, but each duplicate is added only once. into duplicates
+
