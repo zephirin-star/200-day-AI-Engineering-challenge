@@ -100,3 +100,26 @@ _ Test five different datasets
 - seen stores each unique value encountered while looping through the records.
 - duplicates stores values that appear again, but each duplicate is added only once. into duplicates
 
+## Day 11 — Data Cleaning Pipeline
+
+### Function: `clean_delivery_pipeline(records)`
+
+**Purpose:** This function cleans delivery records, removes duplicate values, and returns a summary report.
+
+### How the function works
+
+1. The function creates two empty lists: `cleaned_records` and `duplicates`. It also initializes `rejected_count` to zero.
+2. It uses a `for` loop to process each record.
+3. It replaces commas with periods and uses `float()` to convert records into numbers.
+4. If a record cannot be converted or its value is less than or equal to zero, the function counts it as rejected.
+5. If a valid value already exists in `cleaned_records`, the function adds it to `duplicates` only if it has not already been recorded there.
+6. Otherwise, the function adds the new valid value to `cleaned_records`.
+7. Finally, it returns a dictionary containing the cleaned records, duplicate values, and rejected count.
+
+### Testing
+
+I tested the function using valid values, invalid values, repeated duplicates, and an empty list. I also verified that the original list remains unchanged after calling the function.
+
+### What I learned
+
+I learned how to combine loops, conditionals, exception handling, and lists into one data-cleaning pipeline. I also learned that a nested `if` statement helps prevent repeated duplicates from being added more than once.
