@@ -123,3 +123,24 @@ I tested the function using valid values, invalid values, repeated duplicates, a
 ### What I learned
 
 I learned how to combine loops, conditionals, exception handling, and lists into one data-cleaning pipeline. I also learned that a nested `if` statement helps prevent repeated duplicates from being added more than once.
+
+## Day 12 — Regression Tests
+
+### Purpose
+
+We run regression tests on the `clean_delivery_pipeline()` function to verify that it handles different types of records correctly and that previously fixed bugs do not return.
+
+### Tests Performed
+
+- **Test 1:** Test a list containing four repeated values.
+- **Test 2:** Test a list containing duplicate values.
+- **Test 3:** Test an empty dataset.
+- **Test 4:** Test a list containing invalid values.
+- **Test 5:** Verify that the original input list remains unchanged after calling the function.
+
+### Results
+
+All five test scenarios passed successfully.
+### What I Learned
+
+I learned how to identify and fix a bug using a nested `if` statement. I also learned why regression tests are important: they help us verify that previously fixed bugs do not return when we modify our code.
