@@ -144,3 +144,23 @@ All five test scenarios passed successfully.
 ### What I Learned
 
 I learned how to identify and fix a bug using a nested `if` statement. I also learned why regression tests are important: they help us verify that previously fixed bugs do not return when we modify our code.
+
+## Day 13 — Data Quality Visualization
+
+The `visualize_data_quality(report)` function extracts information from a report dictionary and displays it using a Matplotlib bar chart.
+
+### What the function does
+
+- Displays three bars representing cleaned records, duplicate values, and rejected records.
+- Shows the category names on the X-axis and their corresponding counts on the Y-axis.
+- Uses the report dictionary to determine the height of each bar.
+
+### Testing
+
+- Tested whether the function displays the correct counts.
+- Tested whether an empty dataset can be visualized without raising an error.
+- Verified that the original report dictionary remains unchanged after calling the function.
+
+### What I learned
+
+I learned how to use Matplotlib to visualize data quality and how to test a visualization function with different datasets.
