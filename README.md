@@ -164,3 +164,31 @@ The `visualize_data_quality(report)` function extracts information from a report
 ### What I learned
 
 I learned how to use Matplotlib to visualize data quality and how to test a visualization function with different datasets.
+
+## Day 14 — Data Quality Summary
+
+### Purpose
+The `summarize_data_quality()` function generates a summary of the quality of a delivery dataset.
+
+### Inputs
+The function accepts two parameters:
+- `records`: The original list of delivery records.
+- `report`: A dictionary returned by `clean_delivery_pipeline()`.
+
+### Process
+The function:
+1. Counts the total number of records.
+2. Counts the unique cleaned records.
+3. Retrieves the number of rejected records.
+4. Counts the unique duplicate values.
+5. Calculates the quality percentage.
+6. Handles an empty dataset to prevent division by zero.
+
+### Output
+The function returns a new dictionary containing `total_records`, `cleaned_count`, `rejected_count`, `duplicate_count`, and `quality_percentage`.
+
+### Testing
+The function was tested with a delivery dataset containing valid, invalid, and duplicate records. Additional tests will verify empty inputs and ensure that the original data remains unchanged.
+
+### What I Learned
+I practiced working with dictionaries, function parameters, counting records with `len()`, calculating percentages, and handling division by zero.
