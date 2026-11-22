@@ -192,3 +192,30 @@ The function was tested with a delivery dataset containing valid, invalid, and d
 
 ### What I Learned
 I practiced working with dictionaries, function parameters, counting records with `len()`, calculating percentages, and handling division by zero.
+
+## Day_ 15_Data_Quality_validator()
+
+The function validate_summary_report() checks that all raport dictionaries are valid before any process
+
+The function uses the parameter summary verify whether it's a dictionary or not also the function cheks whether the the raport contains all required keys.
+- Then checks the data types of all count fields
+- validate the quality_ percentage
+- Return the validation result
+- protect the original report
+
+  Then test
+- Valid summary dictionary	True
+- Missing duplicate_count	(False)
+- Negative rejected_count	(False)
+cleaned_count is "3"	(False)
+quality_percentage is 120	(False)
+Empty dictionary {}	 (False)
+quality_percentage = float("nan")	False
+total_records = True	False
+Input isn't a dictionary
+
+I Learned how to verify a database class using the function isisntance and i practice isinstance() and Python data types
+for loops and dictionary keys
+if statements and early return
+Data validation and input preservation
+Automated tests using assert
