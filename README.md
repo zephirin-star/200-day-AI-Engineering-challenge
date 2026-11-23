@@ -219,3 +219,65 @@ for loops and dictionary keys
 if statements and early return
 Data validation and input preservation
 Automated tests using assert
+
+# Day 16 — Data Quality Consistency Checker
+
+## 1. Purpose
+
+The purpose of this project is to create a function called `check_report_consistency()` that checks whether the values in a data-quality report are mathematically consistent.
+
+The function verifies that the record counts add up correctly and that the reported quality percentage matches the calculated percentage.
+
+## 2. Inputs
+
+The `summary` parameter receives a dictionary containing five keys:
+
+- `total_records`: The total number of records.
+- `cleaned_count`: The number of cleaned records.
+- `rejected_count`: The number of rejected records.
+- `duplicate_count`: The number of duplicate records.
+- `quality_percentage`: The percentage of cleaned records.
+
+## 3. Process
+
+The function performs the following steps:
+
+1. It calls `validate_summary_report()` to check whether the input is a valid dictionary containing the required keys and acceptable values.
+2. It extracts the values associated with the five keys from the `summary` dictionary.
+3. It calculates the sum of cleaned, rejected, and duplicate records and compares the result with `total_records`.
+4. If the totals do not match, the function returns `False`.
+5. It checks whether the total is zero to avoid division by zero.
+6. If the total is greater than zero, the function calculates the expected quality percentage using `(cleaned / total) * 100`.
+7. It uses `math.isclose()` with `rel_tol=0` and `abs_tol=0.01` to compare the calculated percentage with the reported percentage.
+
+## 4. Output
+
+The function returns a Boolean value:
+
+- `True` if the report is valid and mathematically consistent.
+- `False` if the report is invalid or mathematically inconsistent.
+
+The function does not modify the original input dictionary.
+
+## 5. Testing
+
+I tested the function using eight different scenarios:
+
+1. A valid report.
+2. A report with inconsistent record counts.
+3. A report with an incorrect quality percentage.
+4. An empty dataset.
+5. A report with a missing required key.
+6. A non-dictionary input.
+7. A report containing a negative total.
+8. A test to verify that the original dictionary remains unchanged.
+
+The tests produced the expected results. I also corrected the testing conditions so that a function returning `False` for invalid data is recognized as a successful test.
+
+## 6. What I Learned
+
+Today, I learned how to check whether the values in a dictionary are mathematically consistent.
+
+I also learned how to use `math.isclose()` to compare decimal numbers, prevent division-by-zero errors, and write better tests using expected results.
+
+This project helped me improve my understanding of Python functions, dictionaries, conditional statements, debugging, and data validation.
